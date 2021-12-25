@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --color-blue-1:#10002b;
+    --color-blue-2:#240046;
+    --color-blue-3:#3c096c;
+    --color-blue-4:#5a189a;
+    --color-blue-5:#7b2cbf;
+    --color-blue-6:#9d4edd;
+    --color-blue-7:#c77dff;
+    --color-blue-8:#e0aaff;
+    --font-style-001:'Moo Lah Lah', cursive;
+    --font-style-002:'Teko', sans-serif;
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    padding: 1rem 2rem;
+    margin: 5rem auto;
+    width: 50%;
+    height: auto;
+    background: linear-gradient(to right top, var(--color-blue-1), var(--color-blue-5));
+    transform: skewY(2deg);
+}
+.img{
+    position: absolute;
+    left: 3rem;
+    opacity: .5;
+}
+.content{
+    width: 100%;
+    transform: skewY(-2deg);
+    text-align: center;
+    z-index: 999;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    font-size: 3rem;
+    transform: translateY(-10px);
+    color: yellow;
+    margin-left: .5rem;
+}
+.heading{
+    font-size: 3.8rem;
+    font-family: var(--font-style-001);
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.ibt{
+    z-index: 11;
+    border: none;
+    padding: 1rem 1.3rem;
+    border-radius: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ibt:focus{
+    outline: none;
+}
+.add-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.btn{
+    margin-left: 1.5rem;
+    cursor: pointer;
+    border: none;
+    height: 38px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-blue-2);
+    background: var(--color-blue-8);
+}
+.finish{
+    color: var(--color-blue-8);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    opacity: .4;
+    transform: skewY(2deg);
+}
+
+.edit-btn{
+    width: 40px;
+    height: 30px;
+    background: rgb(255, 255, 0);
+    color: var(--color-blue-1);
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.new-div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+}
+.remove-btn{
+    border: none;
+    background: transparent;
+    color: #fff;
+    width: 40px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.icon-2{
+    font-size: 2.2rem;
+    transition: .5s ease;
+}
+.btn:hover .icon{
+    transform:rotate(180deg)
+}
+.new-input{
+    border-radius: 3px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: 40%;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    background: var(--color-blue-6);
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 1px;
+}
